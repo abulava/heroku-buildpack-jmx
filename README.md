@@ -25,10 +25,10 @@ Then add your primary buildpack. For example, if you are using Ruby:
 $ heroku buildpacks:add heroku/ruby
 ```
 
-To enable SSH run this command:
+To enable JMX for "web.1" DYNO run this command:
 
 ```
-$ heroku config:set SSH_ENABLED="true"
+$ heroku config:set JMX_ENABLED="true" JMX_ENABLED_FOR_DYNO="web.1"
 ```
 
 Finally, commit your changes, and redeploy the app:
