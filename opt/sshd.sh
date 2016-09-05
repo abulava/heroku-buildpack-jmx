@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$DYNO" = "$JMX_ENABLED_FOR_DYNO" ]] && [ "$JMX_ENABLED" = "true" ]; then
+if [[ "$DYNO" = "'$JMX_ENABLED_FOR_DYNO'" ]] && [ "$JMX_ENABLED" = "true" ]; then
   ssh_port=${SSH_PORT:-"2222"}
   jmx_port=${JMX_PORT:-"1098"}
   rmi_port=${RMI_PORT:-"1099"}
